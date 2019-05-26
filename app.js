@@ -159,6 +159,10 @@ TwitchWebSub.prototype._onPOST = function(req, res) {
 	});
 
 	req.on('end', (function () {
+		if(!this._secret) {
+			this._secret = crypto.createHmac('sha256', this.secret).update(topic).digest('hex');
+		}
+
 		if (crypto.createHmac('sha256', this._secret).update(body).digest('hex') !== signature) {
 			res.writeHead(202, { 'Content-Type': 'text/plain; charset=utf-8' });
 			return res.end();

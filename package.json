@@ -1,5 +1,5 @@
 {
-	"name": "twitchwebsub",
+	"name": "twitchwebhook",
 	"version": "1.0.3",
 	"main": "app.js",
 	"scripts": {
@@ -8,12 +8,12 @@
 	"author": "Timothy Cole <tim@timcole.me>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/TimothyCole/Twitch-WebSub-Webhooks/issues"
+		"url": "https://github.com/marcobuettner/Twitch-WebSub-Webhooks/issues"
 	},
-	"homepage": "https://github.com/TimothyCole/Twitch-WebSub-Webhooks#readme",
+	"homepage": "https://github.com/marcobuettner/Twitch-WebSub-Webhooks#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/TimothyCole/Twitch-WebSub-Webhooks.git"
+		"url": "git+https://github.com/marcobuettner/Twitch-WebSub-Webhooks.git"
 	},
 	"keywords": [
 		"twitch",
